@@ -92,5 +92,14 @@ hr {
   display: flex;
   justify-content: center;
   border: solid black 2px;
-  /* background: red; */
+  padding: 0.35rem;
+  min-width: 30%;
+}
+
+.card_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }

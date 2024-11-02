@@ -5,6 +5,12 @@ title: Tunes
 
 Here are the current tunes I know:
 
+<div class="card_box">
+{% for tune in site.data.tunes %}
+{% render "tune_card", title: tune %}
+{% endfor %}
+</div>
+
 * Haste to the Wedding - Jig, Irish
 * Lark in the Morning - Jig, Irish
 * The Kesh Jig - Jig, Irish
