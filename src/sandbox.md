@@ -2,9 +2,11 @@
 layout: page
 title: Sandbox - for developing components
 ---
+Insert tune card components here:
+{% for tune in site.data.tunes %}
+{% render "tune_card", title: tune %}
+{% endfor %}
 
-Insert a tune card component here:
-{% render "tune_card", title: "Haste to the Wedding" %}
 
 
 <ul>
