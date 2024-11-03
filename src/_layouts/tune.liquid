@@ -4,4 +4,10 @@ layout: default
 
 <h1>{{ data.title }}</h1>
 
+<ul>
+  {% for tag in data.tags %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
+
 {{ content }}

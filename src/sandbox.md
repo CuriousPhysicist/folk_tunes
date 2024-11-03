@@ -15,11 +15,8 @@ Insert tune card components here:
 
 This is the Tune page:
 
-{% assign my_resource = collections.tunes.resources.first %}
-{{ my_resource.relative_url }}
 
 {% for tune in collections.tunes.resources %}
-  <h2>{{ tune.title }}</h2>
-  <p>{{ tune.content | markdownify }}</p>
+<a href="{{tune.relative_url}}">{{ tune.title }}</a>
 {% endfor %}
 
