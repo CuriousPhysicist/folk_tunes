@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "Your First Post on Bridgetown"
-date:   2024-11-02 20:13:00 +0000
-categories: updates
+layout: tune
+title:  "The Irish Washerwoman"
+tags:
+    - Irish
+    - Jig
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bin/bridgetown start`, which launches a web server and auto-regenerates your site when a file is updated.

@@ -13,14 +13,13 @@ Insert tune card components here:
 {% render "tune_card", title: tune %}
 {% endfor %}
 
+This is the Tune page:
 
+{% assign my_resource = collections.tunes.resources.first %}
+{{ my_resource.relative_url }}
 
-<ul>
-  {% for post in collections.posts.resources %}
-    <li>
-      <a href="{{ post.relative_url }}">{{ post.data.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% for tune in collections.tunes.resources %}
+  <h2>{{ tune.title }}</h2>
+  <p>{{ tune.content | markdownify }}</p>
+{% endfor %}
 
-If you have a lot of posts, you may want to consider adding [pagination](https://www.bridgetownrb.com/docs/content/pagination)!

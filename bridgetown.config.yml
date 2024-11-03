@@ -32,3 +32,9 @@ template_engine: liquid
 # timezone: America/Los_Angeles
 # pagination:
 #   enabled: true
+#
+#   Collections configuration
+collections:
+  tunes:
+    output: true
+    permalink: /tunes/:title/
